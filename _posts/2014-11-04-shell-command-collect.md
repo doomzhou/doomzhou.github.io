@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Shell command collect
+categories: [shell]
+tags: [shell, bash, linux]
 ---
 <h2>{{ page.title }}</h2>
 
