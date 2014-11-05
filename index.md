@@ -17,3 +17,5 @@ tagline: thoughts, notes, tutorials, howto’s etc…
 
     Enjoy your staying.
     mail me: "enplcGFpZ2hAZ21haWwuY29tCg=="
+
+[RSS](http://blog.gohjkl.com/rss.xml)
