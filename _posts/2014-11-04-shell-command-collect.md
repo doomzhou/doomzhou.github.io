@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Shell command collect
 categories: [shell]
 tags: [shell, bash, linux]

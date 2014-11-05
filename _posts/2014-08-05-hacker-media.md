@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Hacker Media list
 ---
 <h2>{{ page.title }}</h2>
