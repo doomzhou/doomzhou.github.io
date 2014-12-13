@@ -39,7 +39,7 @@ tags: [linux, Rss]
 
 ####最后长这样就能看了。
 
-[img](https://33.media.tumblr.com/7524aba83dc6c298c818d69ac65629a8/tumblr_ngi3qiQdxs1r68ev5o1_1280.png)
+![img](https://33.media.tumblr.com/7524aba83dc6c298c818d69ac65629a8/tumblr_ngi3qiQdxs1r68ev5o1_1280.png)
 
 ###延伸
 *  OPML是Outline Processor Markup Language的缩写。OPML也是一种XML规范的文件格式。在RSS中，它的主要用途是用来交换RSS Feed。一个OPML文件中可以包含大量的RSS Feed信息，如果一个RSS阅读器支持OPML文件的话，导入 RSS Feed就比较容易了。
