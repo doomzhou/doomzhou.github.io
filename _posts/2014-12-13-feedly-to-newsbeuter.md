@@ -2,7 +2,7 @@
 layout: post
 title: 用Newsbeuter替换Feedly做Rss阅读(双12鲜果Rss死了)
 categories: [Gnu/linux]
-tags: [linux, Rss]
+tags: [linux, Rss, goagent]
 ---
 
 ###需要起因
@@ -11,6 +11,8 @@ tags: [linux, Rss]
 >现在鲜果也死了，我的小心脏(虽然我不用).  
 >另一方面嘛，terminal下装B是我等linuxer的良方。  
 >来吧让我一起把节约生命和装B结合到不起。
+
+>更新:加入goagent代理,kick GFW.
 
 ###操作步骤
 
@@ -40,6 +42,14 @@ tags: [linux, Rss]
 ####最后长这样就能看了。
 
 ![img](https://33.media.tumblr.com/7524aba83dc6c298c818d69ac65629a8/tumblr_ngi3qiQdxs1r68ev5o1_1280.png)
+
+####加入各种代理(以Goagent为例)
+
+    ╰─[:)] % cat ~/.newsbeuter/config 
+    use-proxy   yes
+    proxy       127.0.0.1:8087
+    proxy-type  http
+
 
 ###延伸
 *  OPML是Outline Processor Markup Language的缩写。OPML也是一种XML规范的文件格式。在RSS中，它的主要用途是用来交换RSS Feed。一个OPML文件中可以包含大量的RSS Feed信息，如果一个RSS阅读器支持OPML文件的话，导入 RSS Feed就比较容易了。
