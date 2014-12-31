@@ -1,6 +1,8 @@
 ---
 layout: post
 title: iphone 上使用burpsuite 抓包
+categories: [security]
+tags: [Burpsuite,iPhone]
 ---
 <h2>{{ page.title }}</h2>
 
