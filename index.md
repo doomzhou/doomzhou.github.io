@@ -18,4 +18,6 @@ tagline: thoughts, notes, tutorials, howto’s etc…
     Enjoy your staying.
     mail me: "enplcGFpZ2hAZ21haWwuY29tCg=="
 
+<iframe scrolling="no" style="border:none;" width="250" height="413" src="https://www.google.com/trends/topcharts/widget?cid=61685d24-b18e-46f3-8a2a-6fd3cab6b1a4&geo=&date=2014&vm=trendingchart&h=413"></iframe>
+
 [RSS](http://blog.gohjkl.com/rss.xml)
