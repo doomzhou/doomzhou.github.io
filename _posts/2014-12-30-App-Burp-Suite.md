@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iphone 上使用burpsuite 抓包
+title: iPhone 上使用BurpSuite 抓包
 categories: [security]
 tags: [Burpsuite,iPhone]
 ---
