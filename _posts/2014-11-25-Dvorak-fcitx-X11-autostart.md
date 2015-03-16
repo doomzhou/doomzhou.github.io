@@ -94,6 +94,7 @@ tags: [X11, dvorak, xmodmap]
     keycode 66 = Control_L
     clear Lock
     add Control = Control_L
+    keycode 135 = Pointer_Button2
 
 ###我的.xinitrc###
     
