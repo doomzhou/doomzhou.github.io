@@ -74,6 +74,7 @@ mkdir var/log
 mkdir proc
 mkdir dev
 mkdir dev/pts
+mkdir -p usr/lib/locale/
 mknod dev/null c 1 3
 mknod dev/zero c 1 5
 mknod dev/random c 1 8
@@ -89,6 +90,10 @@ cp -pr /etc/skel /etc/environment /etc/passwd /etc/group /etc/localtime $CHROOT/
 cp -p /etc/security/console.handlers /etc/security/pam_env.conf $CHROOT/etc/security/
 cp -p /var/log/lastlog $CHROOT/var/log/
 cp -pr /usr/share/locale/en /usr/share/locale/en_US /usr/share/locale/locale.alias $CHROOT/usr/share/locale
+cp -pr /usr/share/locale/zh_CN /usr/share/locale/zh /usr/share/locale/zh_CN.GB2312 $CHROOT/usr/share/locale
+cp -pr /usr/share/i18n $CHROOT/usr/share
+cp -pr /usr/lib/locale/locale-archive $CHROOT/usr/lib/locale
+
 
 #COMMANDS="/bin/bash /usr/bin/mysql /usr/bin/ssh"
 COMMANDS="/bin/bash /bin/ls /bin/mkdir /bin/mv /bin/pwd /bin/rm /usr/bin/id /usr/bin/ssh /bin/ping /usr/bin/mysql"
@@ -152,6 +157,13 @@ copy 相关的 (/etcp/passwd, /etc/group, /etc/shadow,/etc/gshadow)
 
 ###好了就这样，有问题找我
 
+
+###更新加入中文支持
+
+{% highlight bash %}}
+mkdir -p usr/lib/locale/
+cp -pr /usr/lib/locale/locale-archive $CHROOT/usr/lib/locale
+{% endhighlight bash %}}
 
 ###Reference: 
 [url1](http://www.systemonix.com/2012/06/chroot-linux.html+&cd=4&hl=en&ct=clnk&gl=us)
