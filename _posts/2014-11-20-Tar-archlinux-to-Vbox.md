@@ -64,4 +64,4 @@ tags: [linux, tar]
 
         除此之外，不做其它操作，不要用自带的iso来安装Vbox增强功能
 
-PS:话说真心没觉得VBox 会比Vmware差，开源不种状态。
+PS:话说真心没觉得VBox 会比Vmware差，开源是种状态。
