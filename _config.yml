@@ -74,7 +74,7 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
-  googlewebmaster_path : /google0844cfb8bcfacb11.html
+  google0844cfb8bcfacb11_path : /google0844cfb8bcfacb11.html
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
