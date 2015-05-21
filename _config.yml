@@ -8,7 +8,7 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : gohjkl.com
+title : doomzhou.github.io
 tagline: Site Tagline
 author :
   name : Doomz
@@ -74,7 +74,6 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
-  google0844cfb8bcfacb11_path : /google0844cfb8bcfacb11.html
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
@@ -83,7 +82,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : gohjkl
+      short_name : doomzhou
     livefyre :
       site_id : 123
     intensedebate :
