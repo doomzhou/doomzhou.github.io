@@ -38,4 +38,4 @@ tagline: thoughts, notes, tutorials, howto’s etc…
 </div>
 
 
-[RSS](http://blog.gohjkl.com/rss.xml)
+[RSS](http://doomzhou.github.io/rss.xml)

@@ -8,7 +8,7 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : gohjkl.com
+title : doomzhou.github.io
 tagline: Site Tagline
 author :
   name : Doomz
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://blog.gohjkl.com
+production_url : http://doomzhou.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -82,7 +82,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : gohjkl
+      short_name : doomzhou
     livefyre :
       site_id : 123
     intensedebate :
