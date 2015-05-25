@@ -155,7 +155,7 @@ copy 相关的 (/etcp/passwd, /etc/group, /etc/shadow,/etc/gshadow)
 还有/lib/libnss_* libraries /etc/hosts, /etc/nsswitch.conf, /etc/resolv.conf
 
 
-####Q2 ssh  chroot error session_pty_req session 0 alloc failed  
+####Q3 ssh  chroot error session_pty_req session 0 alloc failed  
 
     ssh  chroot error session_pty_req session 0 alloc failed  
 
