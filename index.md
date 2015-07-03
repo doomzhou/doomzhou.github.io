@@ -35,7 +35,8 @@ tagline: thoughts, notes, tutorials, howto’s etc…
     Enjoy your staying.
     mail me: "enplcGFpZ2hAZ21haWwuY29tCg=="
 
+    [RSS](http://doomzhou.github.io/rss.xml)
+
 </div>
 
 
-[RSS](http://doomzhou.github.io/rss.xml)
