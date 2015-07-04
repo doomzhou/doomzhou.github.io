@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Index
+title: s/Title//g
 tagline: thoughts, notes, tutorials, howto’s etc…
 ---
 
