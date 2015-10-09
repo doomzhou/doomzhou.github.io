@@ -53,10 +53,14 @@ Intro
 
 `/msg ChanServ SET #foo GUARD ON`
 
-###管理员切到私人channel
+####管理员切到私人channel
 `/msg ChanServ set #foo founder doomzhou`
 `/msg ChanServ op #foo add doomzhou`
 `/mode +i`
+
+####自邀请，防进不去
+
+`/msg Chanserv invite #foo`
 
 
 ###reference
