@@ -39,19 +39,24 @@ Intro
 
 `/msg ChanServ INFO #foo`
 
->>我去这个大个公司竟然没人用，
+>我去这个大个公司竟然没人用，
 
 ####创建Chan
 
 `/join #foo`
 
-####汎注册到自己下面
+####注册到自己下面
 
 `/msg ChanServ REGISTER #foo 1234`
 
 ####加入机器人管理看着就专业
 
 `/msg ChanServ SET #foo GUARD ON`
+
+###管理员切到私人channel
+`/msg ChanServ set #foo founder doomzhou`
+`/msg ChanServ op #foo add doomzhou`
+`/mode +i`
 
 
 ###reference
