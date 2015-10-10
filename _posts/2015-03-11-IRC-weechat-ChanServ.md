@@ -63,6 +63,10 @@ Intro
 `/msg Chanserv invite #foo`
 
 
+####更改为密码方式
+
+`/msg #quancheng mlock +k passwordofyour`
+
 ###reference
 此文档无 可以来 IRC找我
 
