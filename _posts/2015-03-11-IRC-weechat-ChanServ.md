@@ -55,7 +55,7 @@ Intro
 
 ####管理员切到私人channel
 `/msg ChanServ set #foo founder doomzhou`
-`/msg ChanServ op #foo add doomzhou`
+`/msg ChanServ op #foo doomzhou`
 `/mode +i`
 
 ####自邀请，防进不去
