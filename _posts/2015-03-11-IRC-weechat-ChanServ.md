@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 使用IRCi(weechat)入门注册建立私人Chan
+author: doomzhou
 categories: [Linux]
 tags: [IRC, weechat]
 ---
@@ -54,9 +55,9 @@ Intro
 `/msg ChanServ SET #foo GUARD ON`
 
 ####管理员切到私人channel
-`/msg ChanServ set #foo founder doomzhou`
-`/msg ChanServ op #foo doomzhou`
-`/mode +i`
+`/msg ChanServ set #foo founder doomzhou`  
+`/msg ChanServ op #foo doomzhou`  
+`/mode +i`  
 
 ####自邀请，防进不去
 
@@ -66,6 +67,28 @@ Intro
 ####更改为密码方式
 
 `/msg ChanServ set #quancheng mlock +k passwordofyour`
+
+###关于自建立unreal
+
+>TODO(见qckb)
+
+####自建SSL支持后weechat　报错解决方案　
+
+>报错信息
+
+{% highlight bash %}
+11:23:51       me =!= | gnutls: peer's certificate is NOT trusted
+11:23:51       me =!= | gnutls: peer's certificate issuer is unknown
+11:23:51       me =!= | irc: TLS handshake failed
+{% endhighlight bash %}
+
+>解决方案1
+
+[gist](https://github.com/gitterHQ/gitter/issues/459)
+
+>解决方案2
+
+添加cert到信任
 
 ###reference
 此文档无 可以来 IRC找我
