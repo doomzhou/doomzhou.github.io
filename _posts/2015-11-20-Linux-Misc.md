@@ -14,4 +14,5 @@ su -c 'package-cleanup --problems'
 su -c 'yum --setopt=tsflags=noscripts remove zarafa*'
 {% endhighlight bash %}
 >If that doesn't work, try this:
+
 `su -c 'rpm -e --noscripts zarafa*'`
