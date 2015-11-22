@@ -16,3 +16,14 @@ su -c 'yum --setopt=tsflags=noscripts remove zarafa*'
 >If that doesn't work, try this:
 
 `su -c 'rpm -e --noscripts zarafa*'`
+
+
+###intel corporation wireless 7265 linux
+
+`# cp iwlwifi-*.ucode /lib/firmware `
+
+见引用
+[ref](http://linuxwireless.org/en/users/Drivers/iwlwifi/)
+
+下载见
+[提取码：cfc4](http://yunpan.cn/cL9XkZ458pcXT)
