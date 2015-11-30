@@ -22,6 +22,19 @@ su -c 'yum --setopt=tsflags=noscripts remove zarafa*'
 
 `# cp iwlwifi-*.ucode /lib/firmware `
 
+
+
+###notify-send && dunst 实现通知功能,比如翻译
+
+####安装　  
+`pacman -S dunst`
+####启动   
+`dunst `  
+####notify-send   
+`pacman -S libnotify`
+`notify-send 'test' 'test'`
+
+
 见引用
 [ref](http://linuxwireless.org/en/users/Drivers/iwlwifi/)
 
