@@ -40,3 +40,20 @@ su -c 'yum --setopt=tsflags=noscripts remove zarafa*'
 
 下载见
 [提取码：cfc4](http://yunpan.cn/cL9XkZ458pcXT)
+
+
+####Linux 使用key验证后无密码登录维护怎么处理Give root password for maintenance
+
+* select boot item
+* 'e' kernel line
+* add 'init=/bin/bash'
+* 'b' to boot kernel
+* mount -o remont,rw /
+* passwd root
+* reboot
+
+[引用](https://www.md3v.com/linux-give-root-password-for-maintenance-lost-password)
+
+
+
+
