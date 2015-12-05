@@ -16,9 +16,11 @@ Intro
 
 设置方法:其实就是一个命令,具体自己去玩,
 
-`xset dpms force on` 
+`xset -dpms`   #一定要先把dpms 关掉
 
-`xset s 0`
+`xset s 0 0`    #为什么要两个零的话，你们自己把帮助，　 xset s [timeout [circle]]  我也是猜的
+
+*　ps1:xset -dpms 关于电源管理
 
 
 ###tty，term下
