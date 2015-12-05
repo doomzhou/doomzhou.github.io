@@ -17,6 +17,7 @@ Intro
 设置方法:其实就是一个命令,具体自己去玩,
 
 `xset dpms force on` 
+
 `xset s 0`
 
 
