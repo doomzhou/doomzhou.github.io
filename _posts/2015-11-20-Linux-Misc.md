@@ -27,10 +27,15 @@ su -c 'yum --setopt=tsflags=noscripts remove zarafa*'
 ###notify-send && dunst 实现通知功能,比如翻译
 
 ####安装　  
+
 `pacman -S dunst`
+
 ####启动   
+
 `dunst `  
+
 ####notify-send   
+
 `pacman -S libnotify`
 `notify-send 'test' 'test'`
 
@@ -54,6 +59,10 @@ su -c 'yum --setopt=tsflags=noscripts remove zarafa*'
 
 [引用](https://www.md3v.com/linux-give-root-password-for-maintenance-lost-password)
 
+####echo 修改密码
 
+1. `echo -e "new_password\nnew_password" | (passwd --stdin $USER)`
+
+2. `echo "password:name" | chpasswd`
 
 
