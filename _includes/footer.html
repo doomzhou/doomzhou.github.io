@@ -1,0 +1,66 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=page.author %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+<script src="/static_bydoom/jquery-1.11.3.min.js"> </script>
+<script src="/static_bydoom/jquery-ui.js"> </script>
+<script type='text/javascript'>
+$(function() {
+        $.ajax({
+            url: "/search.xml",
+            dataType: "xml",
+            success: function( xmlResponse ) {
+                var data = $( "article", xmlResponse ).map(function() {
+                    return {
+                        value: $( "title", this ).text() + ", " +
+                            ( $.trim( $( "date", this ).text() ) ),
+                        desc: $("description", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+
+                $( "#J_search" ).autocomplete({
+                    source: data,
+                    minLength: 0,
+                    select: function( event, ui ) {
+                        window.location.href = ui.item.url;
+                    }
+                });
+            }
+        });
+    });
+</script>

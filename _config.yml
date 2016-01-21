@@ -1,0 +1,29 @@
+# Site settings
+title: s/Title//g
+email: zzepaighಠ_ಠgmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  The purpose was to create some sort of a Knowledge base/ Cheat Sheets to contain various information about Ops, Security, Operating systems,  Enjoy your staying.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://doomzhou.github.io" # the base hostname & protocol for your site
+twitter_username: doomzhou
+github_username:  zzepaigh
+
+# Build settings
+paginate: 15                    # paginate
+gems: [jekyll-paginate]         # paginate
+paginate_path: "blog/page:num"
+
+# Build settings
+markdown: redcarpet
+redcarpet: 
+    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
+
+JB:
+  version : 0.3.0
+  BASE_PATH : false
+  ASSET_PATH : false
+
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+
