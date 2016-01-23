@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   The purpose was to create some sort of a Knowledge base/ Cheat Sheets to contain various information about Ops, Security, Operating systems,  Enjoy your staying.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://doomzhou.github.io" # the base hostname & protocol for your site
-twitter_username: doomzhou
-github_username:  zzepaigh
+twitter_username: zzepaigh
+github_username:  doomzhou
 
 # Build settings
 paginate: 15                    # paginate
