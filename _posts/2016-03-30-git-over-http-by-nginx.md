@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows7下修改无线MAC地址 [后文有下载工具]
+title: 通过nginx git-http-backend 部署git 仓库
 categories: [Git/linux]
 tags: [Ops, Git]
 ---
@@ -87,4 +87,52 @@ sudo -u www /etc/init.d/fcgiwrap to /etc/rc.local , **www** is your nginx user
 
 ## Config nginx
 
+* nginx　server 配置
 
+        server {
+            listen       80;
+            server_name  git.example.com;
+
+            auth_basic            "Restricted";
+            auth_basic_user_file  /path/htpasswd;
+
+            location ~ /git(/.*) {
+                # fcgiwrap is set up to listen on this host:port
+                fastcgi_pass unix:/tmp/cgi.sock;
+                include       fastcgi_params;
+                fastcgi_param SCRIPT_FILENAME     /usr/libexec/git-core/git-http-backend;
+                # export all repositories under GIT_PROJECT_ROOT
+                fastcgi_param GIT_HTTP_EXPORT_ALL "";
+                fastcgi_param GIT_PROJECT_ROOT    /path1/git;
+                fastcgi_param PATH_INFO           $1;
+                fastcgi_param   REMOTE_USER     $remote_user;
+
+            }
+        }
+
+* 生成htpasswd 
+
+        htpasswd -c /path/htpasswd user
+
+## 测试
+
+生成bare git repo 
+
+    cd /path1/git/
+    mkdir my-repo
+    cd my-repo
+    git --bare init
+
+git clone
+
+    git clone http://git.example.com/git/my-repo
+
+make commit
+
+    date >> readme.md ; git add * ; git commit -m "first commit"
+
+## 注意，全程中用户要用你nginx的work进程用户　，比如html ,www 之类的
+
+## 引用
+
+[nginx fcgiwrap](https://www.nginx.com/resources/wiki/start/topics/examples/fcgiwrap/)
