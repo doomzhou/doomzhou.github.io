@@ -23,7 +23,7 @@ tags: [shadowsocks, linux]
 
 刷机教程我就跳过了，网上一大把，直接拿上包，
 
-[下载链接](http://pan.baidu.com/s/1i3pNtbv) 密码: 5hr4
+[下载链接](https://yunpan.cn/c6QA6xcHsvHtQ) （提取码：b1ce）
 
 里面有三个文件,其中bin文件就是我们要使用的，其它两个ipk是拨号使用的
 conf文件实测，已经不能update,放弃。
@@ -45,7 +45,7 @@ conf文件实测，已经不能update,放弃。
 明白人应该都知道，ss的支持版本里并无我们这个cpu型号，所以直接用ipk 安装并不能成功。
 所以需要这个data.tar.原理很简单，请自行google相应的 deb,ipk,包打包规则。
 
-[data.tar下载](http://pan.baidu.com/s/1o69VLI6)
+[data.tar下载](https://yunpan.cn/c6QAHWpvuPNSC) （提取码：a230）
 
 `scp data.tar root@192.168.1.1:/tmp`
 `tar -xvf data.tar -C /`
